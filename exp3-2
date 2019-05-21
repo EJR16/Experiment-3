@@ -1,0 +1,44 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+
+int main()
+{
+    int i, arr1[7], arr2[7], arr3[7];
+	
+    cout << "Enter all temperature for province A, B and C for the week: \n";
+    for (i = 0; i < 7; ++i)
+        {
+            cout << "Province " << "A" << ", Day " << i + 1 << " : ";
+            cin >> arr1[i];
+        }
+    for (i = 0; i < 7; ++i)
+        {
+            cout << "Province " << "B" << ", Day " << i + 1 << " : ";
+            cin >> arr2[i];
+        }
+    for (i = 0; i < 7; ++i)
+        {
+            cout << "Province " << "C" << ", Day " << i + 1 << " : ";
+            cin >> arr3[i];
+        }
+
+    cout << "\n\nDisplaying all the Values:\n";
+   
+    for (i = 0; i < 7; ++i)
+    {
+            cout << "Province " << "A" << ", Day " << i + 1 << " = " << arr1[i] << endl;
+    }
+	 for (i = 0; i < 7; ++i)
+    {
+            cout << "Province " << "B" << ", Day " << i + 1 << " = " << arr2[i] << endl; 
+    }
+	  for (i = 0; i < 7; ++i)
+    {
+            cout << "Province " << "C" << ", Day " << i + 1 << " = " << arr3[i] << endl;
+    }
+	_getch();
+    return 0;
+}

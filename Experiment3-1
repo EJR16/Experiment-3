@@ -1,0 +1,56 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+	int a, maximum, minimum, largest, smallest, b=10;
+	double	arr[10];
+	int sum = 0;
+    float average;
+
+ 
+	cout << "Please enter 10 numbers \n\n";
+    
+
+	
+     for(int a = 0; a < b; ++a)
+	 {
+       cout << "Enter Number " << a + 1 << " : ";
+       cin >> arr[a];
+	   sum+= arr[a];
+	   average= sum/10;
+    }
+
+    maximum = 0;
+    for(a = 0;a < b; a++)
+    {
+       
+       if(arr[maximum] < arr[a])
+	   {
+		   maximum = a;
+	   }
+	   largest = arr[maximum];
+	}
+	cout << "Largest element = " << largest << "\n";
+
+	minimum = 0;
+    for(a = 0;a < b; a++)
+    {
+       
+       if(arr[minimum] > arr[a])
+	   {
+		   minimum = a;
+	   }
+	   smallest = arr[minimum];
+	}
+	cout << "Smallest element = " << smallest << "\n";
+   
+ 
+	cout << "Sum of the numbers: " << sum << "\n";
+	cout << "Average of the number: " << average << "\n";
+
+	_getch();
+    return 0;
+}

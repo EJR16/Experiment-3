@@ -1,0 +1,42 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main()
+{
+	int sizearr, out;
+	char arr[50], a, b;
+	cout<< "Enter the desired array size: ";
+	cin >> sizearr;
+	cout << " Enter the array elements: ";
+	
+	for (a = 0; a < sizearr; a++)
+	{
+		cin >> arr[a];
+	}
+	
+	cout << "Sorting elements in order \n" ;
+
+	for (a = 0; a < sizearr; a++)
+	{
+		for (b = a + 1; b < sizearr ; b++)
+		{
+			if (arr[a] > arr[b])
+			{
+				out = arr[a];
+				arr[a] = arr[b];
+				arr[b] = out;
+			}
+		}
+	}
+	
+
+	cout << "Result after sorting \n";
+	for (a = 0; a < sizearr; a++)
+	{
+		cout << arr[a]<< ","<<endl;
+	}
+	cout << " Array Size: " << sizearr;
+    _getch();
+ 	return 0;
+}
